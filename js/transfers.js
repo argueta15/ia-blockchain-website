@@ -20,7 +20,7 @@ $(document).ready(function(){
 			'      <label for="amount">Amount</label> '+
 			'      <input type="text" name="amount" id="amount" value="" class="text ui-widget-content ui-corner-all"> '+
 			 '</div>' +
-			'      <input type="submit" value="Send" > '+
+			'      <input type="submit" value="Send" class="btn btn-primary" > '+
 			'    </fieldset> '+
 			'  </form> '+
 			'</div>'

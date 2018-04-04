@@ -10,7 +10,7 @@
 		event.preventDefault();
 		event.stopPropagation();
         if (form.checkValidity() !== false) {
-			$.ajax({
+			/*$.ajax({
 				url: '',
 				data: {
 					data: {
@@ -28,7 +28,8 @@
 				error: function(){
 					alert("error");
 				}
-			});
+			});*/
+			window.location = "index.html";
 		}
         form.classList.add('was-validated');
       }, false);
