@@ -26,7 +26,7 @@ $(document).ready(function(){
 			'</div>'
 		);
 		$("#dialog-form").dialog({
-			autoShow:true,
+			autoOpen:true,
 			modal: true
 		});
 	});
