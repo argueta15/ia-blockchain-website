@@ -10,8 +10,9 @@
 		event.preventDefault();
 		event.stopPropagation();
         if (form.checkValidity() !== false) {
-			/*$.ajax({
-				url: '',
+			$.ajax({
+				type: "POST",
+				url: 'http://lyobe9tmue.execute-api.us-east-1.amazonaws.com/',
 				data: {
 					data: {
 						username: $("#inputUsername").val(),
@@ -20,16 +21,15 @@
 				},
 				success: function(response){
 					if(response.status == 0){
-						window.location = "";
+						window.location = "index.html";
 					}else{
 						alert("error");
 					}
 				},
-				error: function(){
+				error: function(error){
 					alert("error");
 				}
-			});*/
-			window.location = "index.html";
+			});			
 		}
         form.classList.add('was-validated');
       }, false);
