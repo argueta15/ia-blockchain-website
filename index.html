@@ -39,7 +39,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="t in transactions | orderBy:'date'">
+                    <tr ng-repeat="t in transactions">
                         <td>{{t.date | date:'MM/dd/yyyy'}}</td>
                         <td>{{t.amount | currency:"$ ": 0}}</td>                      
                     </tr>

@@ -12,7 +12,8 @@
         if (form.checkValidity() !== false) {
 			$.ajax({
 				type: "POST",
-				url: 'http://lyobe9tmue.execute-api.us-east-1.amazonaws.com/',
+				url: 'https://lyobe9tmue.execute-api.us-east-1.amazonaws.com/hackaton/',
+				crossDomain: true,
 				data: {
 					data: {
 						username: $("#inputUsername").val(),

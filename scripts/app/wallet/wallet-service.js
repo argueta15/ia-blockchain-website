@@ -1,4 +1,4 @@
-administratorModule.factory("walletService", ['$resource', function ($resource) {
+administratorModule.factory("walletService", ['$http', function ($http) {
 
     return {
         get: get,
@@ -13,11 +13,16 @@ administratorModule.factory("walletService", ['$resource', function ($resource) 
     };
 
     function getTransactions(wallet){
+        $http({
+            url: 'https://lyobe9tmue.execute-api.us-east-1.amazonaws.com/hackaton/getbalance',
+            method: "POST",
+            data: { 'address': wallet }
+        }).then(function (data) {
+                return data; // how do pass this to $scope.persons?
+            });
 
-		return [{ date: '2018-04-03', amount: 70},
-				{ date: '20180403T18:00:00', amount: -150},
-				{ date: '2018-04-03', amount: -60},
-				{ date: '2018-04-03', amount: 100},
-				{ date: '2018-04-03', amount: 250}];
+
+
+
     }
 }]);
