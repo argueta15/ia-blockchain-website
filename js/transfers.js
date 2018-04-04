@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	$(".btnDoTransfer").click(function(evt){
 		evt.preventDefault();
-		if($("#modalTranferForm").length > 0){
-			$("#modalTranferForm").remove();
+		if($("#dialog-form").length > 0){
+			$("#dialog-form").remove();
 		}
 		$("body").append('<div id="dialog-form" title="New tranfer"> '+
 			'  <p class="tranfers">All form fields are required.</p> '+ 
